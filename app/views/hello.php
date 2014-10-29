@@ -1,3 +1,6 @@
+<?php
+	require_once app_path().'/views/page_preloader.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
