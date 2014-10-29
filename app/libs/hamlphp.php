@@ -1,4 +1,4 @@
 <?php
-	require_once 'HamlPHP/HamlPHP.php';
-	require_once 'HamlPHP/Storage/FileStorage.php';
+	require_once app_path().'/libs/HamlPHP/HamlPHP.php';
+	require_once app_path().'/libs/HamlPHP/Storage/FileStorage.php';
 ?>

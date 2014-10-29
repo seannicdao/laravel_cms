@@ -86,4 +86,4 @@ require app_path().'/filters.php';
 | Require The Page Preloader File
 |--------------------------------------------------------------------------
 */
-require_once app_path().'/views/page_preloader.php';
+require_once app_path().'/libs/SN_Preloader.php';
