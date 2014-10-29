@@ -6,17 +6,28 @@
             rel='stylesheet'
             type='text/css')/
         @section('head')
-        - foreach (array() as $key => $value)
-            Hello
+            %link(href="#{url('/css/reset.css')}"
+                rel="stylesheet"
+                type='text/css')/
+            %link(href="#{url('/css/foundation.min.css')}"
+                rel="stylesheet"
+                type='text/css')/
+            %link(href="#{url('/css/style.css')}"
+                rel="stylesheet"
+                type='text/css')/
         @show
 	%body
-		#container
-            %ul.navigation
-                %li Nothing
-                %li Tuotteet
+		%div#wrap
+            %div#header
 
-            %h2 Tuotteet
-            %ul.products
-                - foreach (array("Just Some", "And More") as $text)
-                    %li
-                        %span= $text
+            %div#main_container
+                %ul.navigation
+                    %li Nothing
+                    %li Tuotteet
+
+                %h2 Tuotteet
+                %ul.products
+                    - foreach (array("Just Some", "And More") as $text)
+                        %li
+                            %span= $text
+            %div#footer

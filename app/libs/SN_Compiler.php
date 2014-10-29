@@ -65,6 +65,16 @@ class SN_Compiler {
 					return 0;
 				} break;
 			default:
+			case 'css':
+				$d =  str_replace(".$ext", '.css', $d);
+				
+				if (!file_exists($d) || filemtime($filename) > filemtime($d)) {
+					file_put_contents($d, file_get_contents($filename) );
+					return 1;
+				} else {
+					return 0;
+				} break;
+			default:
 		} return 0;
 	}
 }

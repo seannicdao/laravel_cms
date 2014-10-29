@@ -22,5 +22,5 @@
 	//SCSS Compiler
 	$source_dir = app_path()."/assets/scss/*";
 	$destination_dir = public_path()."/css/";
-	if ($compiler->compile_dir($source_dir, $source_dir, $destination_dir)) { echo "hello"; }
+	if ($compiler->compile_dir($source_dir, $source_dir, $destination_dir)) {}
 ?>
